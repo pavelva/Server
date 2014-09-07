@@ -11,7 +11,7 @@ using System.Web;
 /// Summary description for Server
 /// </summary>
 namespace website
-{ 
+{
     public class MyServer
     {
         public static string message = getMyIP();
