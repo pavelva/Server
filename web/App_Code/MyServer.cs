@@ -14,7 +14,7 @@ namespace website
 {
     public class MyServer
     {
-        //public static string message = getMyIP();
+        public static string message = getMyIP();
         //public static bool running = false;
 
         //public static void run()
@@ -52,21 +52,21 @@ namespace website
         //    return data.ToString();
         //}
 
-        //private static string getMyIP()
-        //{
-        //    IPHostEntry host;
-        //    string localIP = "?";
-        //    host = Dns.GetHostEntry(Dns.GetHostName());
-        //    foreach (IPAddress ip in host.AddressList)
-        //    {
-        //        if (ip.AddressFamily.ToString() == "InterNetwork")
-        //        {
-        //            localIP = ip.ToString();
-        //        }
-        //    }
-        //    Console.WriteLine(localIP);
+        private static string getMyIP()
+        {
+            IPHostEntry host;
+            string localIP = "?";
+            host = Dns.GetHostEntry(Dns.GetHostName());
+            foreach (IPAddress ip in host.AddressList)
+            {
+                if (ip.AddressFamily.ToString() == "InterNetwork")
+                {
+                    localIP = ip.ToString();
+                }
+            }
+            Console.WriteLine(localIP);
 
-        //    return localIP;
-        //}
+            return localIP;
+        }
     }
 }
