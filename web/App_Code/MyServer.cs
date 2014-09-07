@@ -54,19 +54,20 @@ namespace website
 
         private static string getMyIP()
         {
-            IPHostEntry host;
-            string localIP = "?";
-            host = Dns.GetHostEntry(Dns.GetHostName());
-            foreach (IPAddress ip in host.AddressList)
-            {
-                if (ip.AddressFamily.ToString() == "InterNetwork")
-                {
-                    localIP = ip.ToString();
-                }
-            }
-            Console.WriteLine(localIP);
+            //IPHostEntry host;
+            //string localIP = "?";
+            //host = Dns.GetHostEntry(Dns.GetHostName());
+            //foreach (IPAddress ip in host.AddressList)
+            //{
+            //    if (ip.AddressFamily.ToString() == "InterNetwork")
+            //    {
+            //        localIP = ip.ToString();
+            //    }
+            //}
+            //Console.WriteLine(localIP);
 
-            return localIP;
+            //return localIP;
+            return "1.1.1.1";
         }
     }
 }
