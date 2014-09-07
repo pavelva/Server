@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -11,8 +12,13 @@ namespace webTest
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            MyServer.start();
-            while(true)
+            MyServer.run();
+            ThreadPool.QueueUserWorkItem(txt);
+        }
+
+        private void txt(Object o)
+        {
+            while (true)
                 lbl.Text = MyServer.message;
         }
     }
