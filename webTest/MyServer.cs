@@ -6,6 +6,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading;
 using System.Web;
+using System.Web.UI.WebControls;
 
 /// <summary>
 /// Summary description for Server
@@ -17,10 +18,10 @@ namespace website
         public static string message = getMyIP();
         public static bool running = false;
 
-        public static void run()
+        public static void run(Label l)
         {
             if (!running)
-                ThreadPool.QueueUserWorkItem(start);
+                ThreadPool.QueueUserWorkItem(start, l);
         }
         public static void start(Object o)
         {
@@ -31,7 +32,7 @@ namespace website
                 running = true;
                 TcpClient client = server.AcceptTcpClient();
                 message = getRequest(client);
-
+                ((Label)o).Text = message;
                 byte[] nytes = Encoding.UTF8.GetBytes("I AM THE SERVER".ToCharArray());
 
                 client.GetStream().Write(nytes, 0, "I AM THE SERVER".Length);

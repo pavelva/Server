@@ -12,8 +12,7 @@ namespace webTest
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            MyServer.run();
-            ThreadPool.QueueUserWorkItem(txt);
+            MyServer.run(lbl);
         }
 
         private void txt(Object o)
