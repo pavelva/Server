@@ -4,25 +4,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "webTest", "..\webTest\", "{0EA87034-01F2-45D2-AEF4-F7B73FB4ACA6}"
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
-		Debug.AspNetCompiler.VirtualPath = "/server-5.apphb.com"
-		Debug.AspNetCompiler.PhysicalPath = "..\webTest\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\server-5.apphb.com\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/server-5.apphb.com"
-		Release.AspNetCompiler.PhysicalPath = "..\webTest\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\server-5.apphb.com\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "..\webTest\"
-	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
