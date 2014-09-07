@@ -53,19 +53,19 @@
     <Reference Include="System.Web.Mobile" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Default.aspx" />
+    <Content Include="default1.aspx" />
     <Content Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Default.aspx.cs">
+    <Compile Include="default1.aspx.cs">
+      <DependentUpon>default1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Default.aspx.designer.cs">
-      <DependentUpon>Default.aspx</DependentUpon>
+    <Compile Include="default1.aspx.designer.cs">
+      <DependentUpon>default1.aspx</DependentUpon>
     </Compile>
     <Compile Include="MyServer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
