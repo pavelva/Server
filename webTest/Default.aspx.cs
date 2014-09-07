@@ -10,6 +10,7 @@ public partial class _Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        Label lbl = (Label)Page.Master.FindControl("lbl");
         lbl.Text = MyServer.message;
     }
 }
