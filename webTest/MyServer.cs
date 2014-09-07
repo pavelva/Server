@@ -26,11 +26,15 @@ namespace website
         {
             while (true)
             {
-                //TcpListener server = new TcpListener(IPAddress.Parse(getMyIP()), 1234);
-                //server.Start();
-                //running = true;
-                //TcpClient client = server.AcceptTcpClient();
-                //message = getRequest(client);
+                TcpListener server = new TcpListener(IPAddress.Parse(getMyIP()), 1234);
+                server.Start();
+                running = true;
+                TcpClient client = server.AcceptTcpClient();
+                message = getRequest(client);
+
+                byte[] nytes = Encoding.UTF8.GetBytes("I AM THE SERVER".ToCharArray());
+
+                client.GetStream().Write(nytes, 0, "I AM THE SERVER".Length);
             }
         }
 

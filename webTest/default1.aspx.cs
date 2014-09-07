@@ -11,7 +11,8 @@ namespace webTest
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            lbl.Text = MyServer.message;
+            while(true)
+                lbl.Text = MyServer.message;
         }
     }
 }
