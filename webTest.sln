@@ -3,16 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "webTest", "{0EA87034-01F2-45D2-AEF4-F7B73FB4ACA6}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "webTest", "http://localhost:62374", "{0EA87034-01F2-45D2-AEF4-F7B73FB4ACA6}"
 	ProjectSection(WebsiteProperties) = preProject
 		UseIISExpress = "true"
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv3.5"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_62374"
 		Debug.AspNetCompiler.PhysicalPath = "..\webTest\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62374\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_62374"
 		Release.AspNetCompiler.PhysicalPath = "..\webTest\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_62374\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
